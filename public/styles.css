@@ -1,0 +1,404 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header {
+    background-color: #005073;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 24px;
+    margin: 0;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav ul li a.active {
+    color: #ffd700;
+}
+
+header nav ul li a:hover {
+    color: #ffd700;
+}
+
+.hero {
+    background-color: #f2f2f2;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.main-content {
+    background-color: #fff;
+    padding: 50px 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-content .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.main-content .container .content-wrapper {
+    display: flex;
+    flex-direction: row; /* Changed to row */
+    width: 100%;
+}
+
+.main-content .container .content-wrapper .text,
+.main-content .container .content-wrapper .image {
+    flex: 1;
+}
+
+.main-content .container .content-wrapper .image img {
+    max-width: 100%; /* Adjusted to fit container */
+    height: auto; /* Adjusted to fit container */
+}
+
+/* Footer styling */
+
+.footer {
+    background-color: #f8f9fa;
+    padding: 50px 0;
+}
+
+.footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.footer-top .quick-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-top .quick-links ul li {
+    margin-bottom: 10px;
+}
+
+.footer-top .quick-links ul li a {
+    color: #3f345f;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-top .quick-links ul li a:hover {
+    color: #17a2b8;
+}
+
+.footer-top .newsletter form {
+    display: flex;
+}
+
+.footer-top .newsletter input[type="email"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+    width: 200px;
+}
+
+.footer-top .newsletter button[type="submit"] {
+    background-color: #17a2b8;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.footer-bottom p {
+    margin-bottom: 10px;
+}
+
+.section-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.section-title h2 {
+    margin-top: 20px;
+}
+
+
+/* Social links section styling */
+
+.social-overlap {
+    padding: 100px 0;
+    background-image: url("http://www.commixturesoft.com/img/shadow3.png");
+    background-repeat: no-repeat;
+}
+
+.social-overlap .container {
+    position: relative;
+}
+
+.social-overlap .section-title {
+    margin-bottom: 50px;
+}
+
+.social-overlap .social-bar {
+    display: flex;
+    justify-content: center;
+}
+
+.social-overlap .social-icons a {
+    border-radius: 50%;
+    color: #3f345f;
+    display: inline-block;
+    line-height: 52px;
+    height: 50px;
+    width: 50px;
+    box-shadow: 0 5px 25px rgba(93, 70, 232, 0.15);
+    margin: 15px 15px;
+    font-size: 22px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.social-overlap .social-icons a:hover {
+    background-color: #17a2b8;
+    color: #fff;
+    -webkit-animation: jello-horizontal 0.9s both;
+            animation: jello-horizontal 0.9s both;
+}
+
+/* Animation for social icons */
+
+@-webkit-keyframes jello-horizontal {
+    0% {
+        -webkit-transform: scale3d(1, 1, 1);
+                transform: scale3d(1, 1, 1);
+    }
+    30% {
+        -webkit-transform: scale3d(1.25, 0.75, 1);
+                transform: scale3d(1.25, 0.75, 1);
+    }
+    40% {
+        -webkit-transform: scale3d(0.75, 1.25, 1);
+                transform: scale3d(0.75, 1.25, 1);
+    }
+    50% {
+        -webkit-transform: scale3d(1.15, 0.85, 1);
+                transform: scale3d(1.15, 0.85, 1);
+    }
+    65% {
+        -webkit-transform: scale3d(0.95, 1.05, 1);
+                transform: scale3d(0.95, 1.05, 1);
+    }
+    75% {
+        -webkit-transform: scale3d(1.05, 0.95, 1);
+                transform: scale3d(1.05, 0.95, 1);
+    }
+    100% {
+        -webkit-transform: scale3d(1, 1, 1);
+                transform: scale3d(1, 1, 1);
+    }
+}
+
+@keyframes jello-horizontal {
+    0% {
+        -webkit-transform: scale3d(1, 1, 1);
+                transform: scale3d(1, 1, 1);
+    }
+    30% {
+        -webkit-transform: scale3d(1.25, 0.75, 1);
+                transform: scale3d(1.25, 0.75, 1);
+    }
+    40% {
+        -webkit-transform: scale3d(0.75, 1.25, 1);
+                transform: scale3d(0.75, 1.25, 1);
+    }
+    50% {
+        -webkit-transform: scale3d(1.15, 0.85, 1);
+                transform: scale3d(1.15, 0.85, 1);
+    }
+    65% {
+        -webkit-transform: scale3d(0.95, 1.05, 1);
+                transform: scale3d(0.95, 1.05, 1);
+    }
+    75% {
+        -webkit-transform: scale3d(1.05, 0.95, 1);
+                transform: scale3d(1.05, 0.95, 1);
+    }
+    100% {
+        -webkit-transform: scale3d(1, 1, 1);
+                transform: scale3d(1, 1, 1);
+    }
+}
+
+/* Dropdown Menu Styles */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    z-index: 1; /* Adjust z-index value */
+    top: calc(100% - 10px); /* Adjust the distance from the parent element */
+    left: 0;
+}
+
+
+li {
+    position: relative;
+}
+
+.dropdown-menu li {
+    display: block;
+    padding: 10px;
+}
+
+.dropdown-menu li a {
+    display: block;
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.dropdown-menu li a:hover {
+    color: #17a2b8;
+}
+
+/* Show dropdown menu on hover */
+li:hover .dropdown-menu {
+    display: block;
+}
+
+
+/* CSS for Registration and Login Sections */
+.login {
+    display: none; /* Hide login section by default */
+    padding: 50px 0;
+}
+
+.registration {
+    padding: 50px 0;
+}
+
+.registration h2, .login h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.registration form, .login form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.registration .form-group, .login .form-group {
+    margin-bottom: 20px;
+}
+
+.registration label, .login label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.registration input[type="text"],
+.registration input[type="email"],
+.registration input[type="tel"],
+.registration input[type="password"],
+.registration select,
+.login input[type="email"],
+.login input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.registration button[type="submit"],
+.login button[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #005073;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Added transition */
+}
+
+/* Hover animation */
+.registration button[type="submit"]:hover,
+.login button[type="submit"]:hover {
+    background-color: #17a2b8;
+    transform: translateY(-2px); /* Move the button up slightly on hover */
+}
+
+
+/* Additional styling for login link */
+.registration p {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.registration p a {
+    color: #005073;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.registration p a:hover {
+    color: #17a2b8;
+}
+
+
+.error-message {
+    color: red;
+    font-size: 14px;
+}

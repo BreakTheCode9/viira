@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <header>
+        <!-- Your header content here -->
+    </header>
+
+    <main>
+        <section class="registration">
+            <div class="container">
+                <h2>Registration</h2>
+                <form id="registration-form" action="#" method="post">
+                    <div class="form-group">
+                        <label for="title">Title:</label>
+                        <select id="title" name="title">
+                            <option value="mr">Mr.</option>
+                            <option value="mrs">Mrs.</option>
+                            <option value="ms">Ms.</option>
+                            <option value="dr">Dr.</option>
+                            <option value="dr">Prof.</option>
+
+                            <!-- Add more options as needed -->
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="first-name">First Name:</label>
+                        <input type="text" id="first-name" name="first-name" required>
+                        <span class="error-message"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="last-name">Last Name:</label>
+                        <input type="text" id="last-name" name="last-name" required>
+                        <span class="error-message"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                        <span class="error-message"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number:</label>
+                        <input type="tel" id="phone" name="phone" required>
+                        <span class="error-message"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" name="password" required>
+                        <span class="error-message"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="confirm-password">Confirm Password:</label>
+                        <input type="password" id="confirm-password" name="confirm-password" required>
+                        <span class="error-message"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="neighborhood">Select Neighborhood:</label>
+                        <select id="neighborhood" name="neighborhood">
+                            <optgroup label="Ikoyi">
+                                <option value="ikoyi">Ikoyi</option>
+                                <!-- Add streets in Ikoyi -->
+                                <option value="dolphin-estate">Dolphin Estate</option>
+                                <option value="banana-island">Parkview Island</option>
+                            </optgroup>
+                            <optgroup label="Victoria Island">
+                                <option value="vi">Victoria Island</option>
+                                <!-- Add streets in Victoria Island -->
+                                <option value="lekki-phase-1">Louvre Garden</option>
+                                <option value="oniru">Wilkins St.</option>
+                            </optgroup>
+                            <!-- Add more options as needed -->
+                        </select>
+                    </div>
+                    <button type="submit">Register</button>
+                </form>
+                <p>Already have an account? <a href="#" id="login-link">Login</a></p>
+            </div>
+        </section>
+
+        <section id="login" class="login">
+            <div class="container">
+                <h2>Login</h2>
+                <form action="#" method="post">
+                    <div class="form-group">
+                        <label for="login-email">Email:</label>
+                        <input type="email" id="login-email" name="login-email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="login-password">Password:</label>
+                        <input type="password" id="login-password" name="login-password" required>
+                    </div>
+                    <button type="submit">Login</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="quick-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Community News</a></li>
+                        <li><a href="#">Events</a></li>
+                        <li><a href="#">Areas</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="newsletter">
+                    <h3>Newsletter</h3>
+                    <form action="#" method="post">
+                        <input type="email" name="email" placeholder="Enter your email">
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Victoria Island and Ikoyi Residents' Association. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <section class="trial-block shadow3" id="ContactUs">
+        <div class="height450">
+            <div class="section-title text-center">
+                <span class="badge badge-info">Get Started</span>
+                <h2>Social Link</h2>
+                <span class="section-title-line section-title-line"></span>
+            </div>
+            <div class="social-overlap process-scetion mt100">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-md-10">
+                            <div class="social-bar">
+                                <div class="social-icons mb-3 iconpad text-center">
+                                    <a href="#" class="slider-nav-item"><i class="fab fa-facebook"></i></a>
+                                    <a href="#" class="slider-nav-item"><i class="fab fa-google-plus"></i></a>
+                                    <a href="#" class="slider-nav-item"><i class="fab fa-twitter"></i></a>
+                                    <a href="https://www.youtube.com/watch?v=_XiOcsj3oNI&t=50s" target="_blank" class="slider-nav-item"><i class="fab fa-instagram"></i></a>
+                                    <a href="https://www.youtube.com/watch?v=_XiOcsj3oNI&t=50s" target="_blank" class="slider-nav-item"><i class="fab fa-linkedin"></i></a>
+                                    <a href="#" target="_blank" class="slider-nav-item"><i class="fab fa-pinterest"></i></a>
+                                    <a href="https://www.youtube.com/watch?v=_XiOcsj3oNI&t=50s" target="_blank" class="slider-nav-item"><i class="fab fa-skype"></i></a>                                
+                                    <a href="#" class="slider-nav-item"><i class="fab fa-youtube"></i></a>
+                                    <a href="#" class="behance slider-nav-item"><i class="fab fa-behance"></i></a>
+                                    <a href="https://www.youtube.com/watch?v=_XiOcsj3oNI&t=50s" target="_blank" class="slider-nav-item"><i class="fab fa-dribbble"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
